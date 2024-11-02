@@ -82,7 +82,18 @@
   * Events Tab :
        * Configure event listener.
        * Configure the user events like we need login event or not, like that here.
-       * configure the admin events here. https://www.keycloak.org/server/logging **REFER**!!!.
+       * configure the admin exists here. https://www.keycloak.org/server/logging **REFER**!!!.
+  * Localization :
+       * see internalization md file for info.
+  * Security defences :
+       * see securityDefence md file for info.
+  * Session & Tokens :
+       * see session & token md file for info.
+  * User Profile :
+    *  see user_profile & user_profile_validation. 
+    * Annotations are extra custom configuration, we can do it for the attribute like changing the input element to text area like that we have many.
+    * These annotation take effect when particular event, like while inputting the field.
+    * Attribute group, shows the attribute in group in UI see metadata group for example, whatever attribute we add it displays in groups in UI.
 
 
 
