@@ -91,7 +91,7 @@
       realm to the declarative user profile and you don't have yet all user attributes defined in the user profile
       configuration. By setting `Only administrators can write`, unmanaged attributes can be managed only through the
       administration console and API, useful if you have already defined any custom attribute that can be managed by
-      users but you are unsure about adding other attributes that should only be managed by administrators. By
+      users, but you are unsure about adding other attributes that should only be managed by administrators. By
       setting `Only administrators can view`, unmanaged attributes are read-only and only available through the
       administration console and API.
         * **By enabling this only the attributes tab will appear in the users options.**
@@ -99,7 +99,7 @@
       Management UI.
     * Endpoints : Shows the configuration of the Service Provider endpoint.
 * Login Tab :
-    * Easily understandable see ? mark near it.
+    * Easily understandable see ? mark near it. (userRegistration.md)
 * Email Tab :
     * Email template related settings.
 * Themes Tab :
@@ -123,7 +123,10 @@
     * These annotation take effect when particular event, like while inputting the field.
     * Attribute group, shows the attribute in group in UI see metadata group for example, whatever attribute we add it
       displays in groups in UI.
+* User Registration Tab :
+    * This tab contains default roles and groups that will be applied to the new users during registration.
 
 **Some Resources are present in this slide also :**
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
+<span style="color:red"> NOTE !!! - In newer version in keycloak, some functionality is moved to new places in UI than the older version of keycloak, but works as same as older version. Sometimes bug also encountered in UI and new features also added in the newer versions. </span>
