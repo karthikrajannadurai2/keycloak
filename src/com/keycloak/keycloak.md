@@ -13,6 +13,9 @@
     * Anonymous policy is for the client registration with the authentication (without initial access token).
     * There is postman collection is there under **Keycloak** (Authenticated_Client_registeration_Initial_access_token).
 
+* Client Settings :
+    * This has control over the client (see clientSettings.md file).
+
 **3. Client Scope :**
 
 * Clients scope is the one that gets added to the access token or ID token. (**Scope :-** Opportunity to do something.)
@@ -125,6 +128,10 @@
       displays in groups in UI.
 * User Registration Tab :
     * This tab contains default roles and groups that will be applied to the new users during registration.
+* Client Policies :
+    * see clientPolicies & executor md files for details.
+    * Profiles has the config for the executor, that has the actual logic to do.
+    * Policies has the client profiles and condition on which, it should be validated upon.
 
 **Some Resources are present in this slide also :**
 
