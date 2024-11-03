@@ -15,6 +15,37 @@
 
 * Client Settings :
     * This has control over the client (see clientSettings.md file).
+    * **Client authentication:-** This defines the type of the OIDC client. When it's ON, the OIDC type is set to
+      confidential access type. When it's OFF, it is set to public access type.
+    * **Authorization:-** This enables fine-grained control over the authorization.
+    * **Authentication flow:-**
+        * Standard flow - This enables support of 'Authorization Code Flow' for this client.
+        * Direct access grants - In terms of OAuth2 specification, this enables support of 'Resource Owner Password
+          Credentials Grant' for this client.
+        * Implicit flow - In terms of OpenID Connect or OAuth2 specifications, this enables support of 'Implicit Flow'
+          for this client.
+        * Service accounts roles - In terms of OAuth2 specification, this enables support of 'Client Credentials Grant'
+          for this client.
+        * OAuth 2.0 Device Authorization Grant - This enables support for OAuth 2.0 Device Authorization Grant, which
+          means that client is an application on device that has limited input capabilities or lack a suitable browser.
+        * OIDC CIBA Grant - This enables support for OIDC CIBA Grant, which means that the user is authenticated via
+          some external authentication device instead of the user's browser.
+    * **Credentials**-:
+        * This tab is enabled only when the client authentication is turned on, because it is set for the confidential
+          clients only.
+        * **Client authenticator:-** This contains the client authentication mechanism.
+            * Signed jwt uses RS algorithm for signing and signed jwt with client token uses HS algorithm, where only
+              some text is used for signing like client secret. **So based on the algorithm we use, the signing
+              procedure changes.**
+            * See differentTypesOfSigningAlgorithm for more info.
+    * **ServiceAccount roles**-:
+        * Under this you can assign roles to the service accounts, that is client that uses client credentials grant
+          type.
+        * (see serviceAccount.md)
+    * **Authorization:-**
+        * Keycloak can be used for authorization purpose also, like user having particular role or path having
+          particular role only can access the resource.
+        * (more on YouTube https://www.youtube.com/@diveintodev)
 
 **3. Client Scope :**
 
