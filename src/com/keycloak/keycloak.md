@@ -164,6 +164,29 @@
     * Profiles has the config for the executor, that has the actual logic to do.
     * Policies has the client profiles and condition on which, it should be validated upon.
 
+**11. Authentication Tab**
+
+* Required Actions:-
+    * In authenticating the users, the required actions are one that are required by the user to complete it.
+    * We can have default actions for all users.
+    * We can configure own required actions, by extending the service provider interface.
+    * REFER **requiredActionsAuthentication.md**
+* Policies :-
+    * We can configure the authentication settings, like password length, like that.
+* Flows :-
+    * Authentication flows are the step-by-step process for particular authentication mechanism like browser flow.
+    * We can have our own custom authentication flows by extending the service provider interface.
+    * Some concepts are present in the YT videos downloaded.
+* SPI :-
+    * By extending the spi, we can customize or add additional functionality to the keycloak. (refer spi).
+* Identity Brokering:-
+    * Using the third party systems for authenticating is identity brokering.
+    * The system that actually authenticates the request is called identity providers.
+    * Here the keycloak acts as a middleman to authenticate.
+    * eg:- github,google.
+* User federation:-
+    * see SSO_vs_UserFederation.md
+
 **Some Resources are present in this slide also :**
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
