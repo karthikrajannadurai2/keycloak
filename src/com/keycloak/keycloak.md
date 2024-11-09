@@ -186,6 +186,8 @@
     * eg:- github,google.
 * User federation:-
     * see SSO_vs_UserFederation.md
+* Custom SPI implementation:-
+    * see ProjectSetupForKeycloak.md.md, JavaSPI_DesignPattern.md, keycloakSPI_architecture.md.
 
 **Some Resources are present in this slide also :**
 
