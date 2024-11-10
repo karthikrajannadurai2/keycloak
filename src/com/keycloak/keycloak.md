@@ -189,8 +189,13 @@
 * Custom SPI implementation:-
     * see ProjectSetupForKeycloak.md.md, JavaSPI_DesignPattern.md, keycloakSPI_architecture.md.
 * Swagger Tools:-
-    * Swagger tools are more powerful, it can visualize schemas, generate model and client code to make calls to api, and server  side hosting of the swagger visualizer.
-**Some Resources are present in this slide also :**
+    * Swagger tools are more powerful, it can visualize schemas, generate model and client code to make calls to api,
+      and server side hosting of the swagger visualizer.
+* Debugging keycloak in docker:-
+    * To debug enable the port number and set the env for jvm. Then start the docker container with the run command and
+      configure intellj to connect to the remote debuting.
+    * Refer debugging in keycloak.
+      **Some Resources are present in this slide also :**
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
 <span style="color:red"> NOTE !!! - In newer version in keycloak, some functionality is moved to new places in UI than the older version of keycloak, but works as same as older version. Sometimes bug also encountered in UI and new features also added in the newer versions. </span>
