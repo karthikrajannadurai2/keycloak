@@ -188,7 +188,8 @@
     * see SSO_vs_UserFederation.md
 * Custom SPI implementation:-
     * see ProjectSetupForKeycloak.md.md, JavaSPI_DesignPattern.md, keycloakSPI_architecture.md.
-
+* Swagger Tools:-
+    * Swagger tools are more powerful, it can visualize schemas, generate model and client code to make calls to api, and server  side hosting of the swagger visualizer.
 **Some Resources are present in this slide also :**
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
