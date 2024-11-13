@@ -188,6 +188,8 @@
     * see SSO_vs_UserFederation.md
 * Custom SPI implementation:-
     * see ProjectSetupForKeycloak.md.md, JavaSPI_DesignPattern.md, keycloakSPI_architecture.md.
+    * If provider is picked up by the postman, we can check in provider section in the keycloak home of local version.
+    * Refer **VerifyInstallationOfSPI.md**
 * Swagger Tools:-
     * Swagger tools are more powerful, it can visualize schemas, generate model and client code to make calls to api,
       and server side hosting of the swagger visualizer.
