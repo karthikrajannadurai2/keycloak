@@ -1,1 +1,2 @@
 org.keycloak.ipAuthenticator.IpAuthenticatorFactory
+org.keycloak.smsAuthentication.SmsAuthenticationFactory

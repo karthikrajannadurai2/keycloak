@@ -12,6 +12,7 @@ import java.util.List;
 
 import static org.keycloak.provider.ProviderConfigProperty.STRING_TYPE;
 
+// https://github.com/lukaszbudnik/keycloak-ip-authenticator/blob/main/src/main/java/com/github/lukaszbudnik/keycloak/ipauthenticator/IPAuthenticatorFactory.java
 public class IpAuthenticatorFactory implements AuthenticatorFactory {
 
     static final String ID = "IpAuthenticator";
