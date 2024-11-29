@@ -201,6 +201,14 @@
 * Configs :-
     * There are many ways to enable or disable the features in keycloak, env vars, config, admin rest api.
     * The spi related changes are done via conf files, because the spi are loaded in startup, we can't config using other medium.
+    * Likewise, enabling disabling the supported otp application, can be configured using conf file. (https://www.keycloak.org/server/configuration)
+    * For configuring the spi related configs, refer the availableEnv.md file, the spi config, starts with the "spi",
+    * (spi-otp-application-freeotp-enabled) 
+    * spi -- as per keycloak spec.
+    * otp-application -- spi provider name from the admin console ui.
+    * freeotp-- name of the provider.
+    * enabled -- keycloak spec.
+    * This configs are particular for specific spi's. (to disable or enable or any other actions).
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
 <span style="color:red"> NOTE !!! - In newer version in keycloak, some functionality is moved to new places in UI than the older version of keycloak, but works as same as older version. Sometimes bug also encountered in UI and new features also added in the newer versions. </span>
