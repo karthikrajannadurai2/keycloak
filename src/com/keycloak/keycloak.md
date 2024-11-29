@@ -198,6 +198,9 @@
       configure intellj to connect to the remote debuting.
     * Refer debugging in keycloak.
       **Some Resources are present in this slide also :**
+* Configs :-
+    * There are many ways to enable or disable the features in keycloak, env vars, config, admin rest api.
+    * The spi related changes are done via conf files, because the spi are loaded in startup, we can't config using other medium.
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
 <span style="color:red"> NOTE !!! - In newer version in keycloak, some functionality is moved to new places in UI than the older version of keycloak, but works as same as older version. Sometimes bug also encountered in UI and new features also added in the newer versions. </span>
