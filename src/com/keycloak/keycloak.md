@@ -200,15 +200,22 @@
       **Some Resources are present in this slide also :**
 * Configs :-
     * There are many ways to enable or disable the features in keycloak, env vars, config, admin rest api.
-    * The spi related changes are done via conf files, because the spi are loaded in startup, we can't config using other medium.
-    * Likewise, enabling disabling the supported otp application, can be configured using conf file. (https://www.keycloak.org/server/configuration)
+    * The spi related changes are done via conf files, because the spi are loaded in startup, we can't config using
+      other medium.
+    * Likewise, enabling disabling the supported otp application, can be configured using conf
+      file. (https://www.keycloak.org/server/configuration)
     * For configuring the spi related configs, refer the availableEnv.md file, the spi config, starts with the "spi",
-    * (spi-otp-application-freeotp-enabled) 
+    * (spi-otp-application-freeotp-enabled)
     * spi -- as per keycloak spec.
     * otp-application -- spi provider name from the admin console ui.
     * freeotp-- name of the provider.
     * enabled -- keycloak spec.
-    * This configs are particular for specific spi's. (to disable or enable or any other actions).
+    * These configs are particular for specific spi's. (to disable or enable or any other actions).
+* TOTP:-
+   * otpauth://totp/provider:yogesh.sharma%40ahliunited.com?secret=KJKXATSJMEYUYUSLHFVWSTZUGQZWM3LX&digits=6&algorithm=SHA1&issuer=provider&period=30
+   * This is the url schema used in the qrcode of 2MFA. its url because it can be used in the redirection to apps & can encode meta details easily.
 
 <span style="color:red"> refer this slide :-- <a>https://docs.google.com/presentation/d/1E1wdsMe-Bqb2JFVA2HI0rHfLLdVR7BCjJ-tpxKLeU4Y/edit</a> </span>
+<span style="color:red"> Source code for the implementation of various feature is present in the services directory (eg:- services/src/main/java/org/keycloak/authentication/authenticators/browser/OTPFormAuthenticator.java
+), every feature is the spi in keycloak.  </span><br>
 <span style="color:red"> NOTE !!! - In newer version in keycloak, some functionality is moved to new places in UI than the older version of keycloak, but works as same as older version. Sometimes bug also encountered in UI and new features also added in the newer versions. </span>
